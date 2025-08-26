@@ -6,6 +6,10 @@ body {
     color: #d4d4d4; /* silver text */
     margin: 0;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 /* Header Bar */
 header {
@@ -27,6 +31,7 @@ header {
         box-shadow: 0 0 10px #ffd700; /* gold glow */
         max-width: 800px;
         margin: 2rem auto;
+        box-shadow: 0 0 15px #ffd700; /* gold glow */
     }
 
     /* Headings */
@@ -66,4 +71,3 @@ header {
     a:hover {
         text-decoration: underline;
     }
-    
