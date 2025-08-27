@@ -1,4 +1,4 @@
-## 08-24 – Lesson 1 Intrucution to the web
+## 🗓️ 08-24 – Lesson 1: Introduction to the Web
 
 ---
 
@@ -11,7 +11,7 @@
 - 🏁 Pathfinder of the Stack – for completing your first lesson  
 - 🌱 Newborn Coder – for entering the world of structured web development  
 
-**Class**: Disciple
+**Class**: Disciple  
 
 **Mastery**:  
 - HTML & CSS: Initiated  
@@ -31,10 +31,10 @@
 
 ---
 
-## Lesson 1: Introduction to the Web
+## 📘 Lesson Summary – Introduction to the Web
 
 **Date Completed**: August 24, 2025  
-- Practice Quiz 1 Score: 10/10 ✅  
+**Practice Quiz 1 Score**: 10/10 ✅  
 
 **Topics Covered**:  
 - ARPANET and the evolution of the internet  
@@ -47,7 +47,7 @@
 - Client-side scripts: run by the browser  
 - Server-side scripts: run by the back end  
 
-**Missed Concepts**: None  
+**Missed Concepts**: None
 
 ---
 
