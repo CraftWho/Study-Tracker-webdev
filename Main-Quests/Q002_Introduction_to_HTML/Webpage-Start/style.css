@@ -93,3 +93,9 @@ footer {
   background-image: url('your-parchment-texture.png');
   background-size: cover;
 }
+
+h1, h2, p {
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* === 🖤 End of Style === */
