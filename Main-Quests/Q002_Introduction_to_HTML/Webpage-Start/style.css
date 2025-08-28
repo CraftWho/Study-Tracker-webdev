@@ -20,15 +20,24 @@ header {
 /* === 🧭 Navigation === */
 nav {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none; /* Removes default list dots */
+  padding-left: 0;
 }
 
 nav a {
   color: #ffd700;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
   font-size: 1.1rem;
   transition: color 0.3s ease;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Black outline */
 }
 
 nav a:hover {
@@ -46,18 +55,21 @@ nav a:hover {
   max-width: 800px;
   margin: 40px auto;
   text-align: center;
+  background-image: url('your-parchment-texture.png');
+  background-size: cover;
 }
 
 /* === 🧾 Typography === */
 h1, h2 {
   color: #ffd700;
-  text-shadow: 0 0 5px #b8860b;
+  text-shadow: 1px 1px 3px #000;
 }
 
 p {
   color: #d4d4d4;
   font-size: 1.1rem;
   font-weight: 500;
+  text-shadow: 1px 1px 3px #000;
 }
 
 /* === 🕹️ Button === */
@@ -86,16 +98,6 @@ footer {
   font-size: 0.9rem;
   color: #999;
   margin-top: 40px;
-}
-
-/* Optional: Add parchment texture to the container */
-.container {
-  background-image: url('your-parchment-texture.png');
-  background-size: cover;
-}
-
-h1, h2, p {
-  text-shadow: 1px 1px 3px #000;
 }
 
 /* === 🖤 End of Style === */
