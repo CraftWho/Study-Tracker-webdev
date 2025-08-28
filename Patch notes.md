@@ -41,3 +41,12 @@
 - Added `Q002_SideQuest_Networking_diagram.md` with LAN vs WAN breakdown
 - Linked both side quests to codex and mastery system
 - Reinforced networking concepts from Q001 with visual diagrams
+
+---
+
+### 🧪 Patch v1.4 – DP Progress Tracker Added
+
+- Implemented dynamic gold-filled progress bar  
+- Synced with current DP and level system  
+- Styled for RPG immersion with glowing effects  
+- Future-ready for milestone animations and class unlocks
