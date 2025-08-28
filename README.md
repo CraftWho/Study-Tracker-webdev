@@ -50,6 +50,7 @@ Welcome, Traveler. This questline marks the beginning of your journey into softw
 ## 🔁 Post-Quest Rituals
 
 After completing each subquest:
+
 - Reflect in the subquest README
 - Update `skill-tree.md` with new abilities
 - Add key learnings to `codex.md`
@@ -60,6 +61,7 @@ After completing each subquest:
 ## 🎨 Theming Notes
 
 Maintain visual consistency across builds using your preferred palette:
+
 - ⚫ Black
 - 🟡 Gold
 - 🔴 Red
