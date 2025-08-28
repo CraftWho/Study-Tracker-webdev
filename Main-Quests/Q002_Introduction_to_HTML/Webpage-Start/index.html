@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?fafmily=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leo's RPG Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,17 +12,34 @@
     <h1>🧭 Leo's RPG Webpage</h1>
     <nav>
       <ul>
-        <li><a href="#">📜 Quest Log</a></li>
-        <li><a href="#">🌿 Skill Tree</a></li>
-        <li><a href="#">📖 Codex</a></li>
+        <li><a href="../quiz-log.md">📜 Quest Log</a></li>
+        <li><a href="../skill-tree.md">🌿 Skill Tree</a></li>
+        <li><a href="../codex.md">📖 Codex</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
     <h2>Welcome, Traveler</h2>
-    <p>This is a modular webpage built in VS Code.</p>
-    <button onclick="showMessage()">Begin Quest</button>
+    <p>This is a modular webpage built in VS Code. It serves as the visual gateway to my developer questline.</p>
+
+    <section class="status">
+      <h3>🎮 Current Status</h3>
+      <ul>
+        <li>Class: 🧑‍🎓 Disciple</li>
+        <li>Level: 2</li>
+        <li>Developer Points: 400 DP</li>
+      </ul>
+    </section>
+    <section class="progress">
+  <h3>🧮 DP Progress</h3>
+  <div class="progress-bar">
+    <div class="fill" style="width: 80%;"></div>
+  </div>
+  <p>400 / 500 DP to Level 3</p>
+</section>
+
+    <button onclick="showStatus()">Check Status</button>
   </main>
 
   <footer>

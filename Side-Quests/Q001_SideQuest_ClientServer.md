@@ -1,4 +1,4 @@
-##  Follow-Up – Client/Server Interaction
+## Follow-Up – Client/Server Interaction
 
 ---
 
@@ -22,6 +22,7 @@
 ### 🧠 Reflection
 
 This flow reinforces:
+
 - How front-end and back-end systems communicate  
 - Why server-side logic is essential for data access and security  
 - How this maps to real-world apps like login forms, dashboards, and APIs

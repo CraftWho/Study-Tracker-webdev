@@ -6,15 +6,18 @@
 
 **Date**: August 24, 2025  
 **Current Phase**: Initiation  
+**Level Unlocked**: 🎮 Level 1  
+**Developer Points Earned**: +200 DP  
+🔗 [DP Log](../dp-log.md#q001) | [Quiz Log](../quiz-log.md#q001) | [Skill Tree](../skill-tree.md#🧱-foundations)
 
-**Titles Earned**:  
+**Titles Earned**:
 
-- 🏁 Pathfinder of the Stack – for completing your first lesson  
+- 🏁 Pathfinder of the Stack – for completing your first lesson
 - 🌱 Newborn Coder – for entering the world of structured web development  
 
 **Class**: Disciple  
 
-**Mastery**:  
+**Mastery**:
 
 - HTML & CSS: Initiated  
 - Networking Concepts: Understood  
@@ -39,10 +42,13 @@
 
 **Date Completed**: August 24, 2025  
 **Practice Quiz 1 Score**: 10/10 ✅  
+**DP Earned from Quiz**: +100  
+**DP Earned from Video**: +100  
+🔗 [Quiz Log](../quiz-log.md#q001)
 
 **Topics Covered**:
 
-- ARPANET and the evolution of the internet  
+- ARPANET and the evolution of the internet
 - Packet-switched networks: data broken into packets  
 - LAN vs WAN: local vs global networking  
 - WAN example: the internet  
@@ -68,4 +74,4 @@
 
 3. ⚔️ Update Dev Status Sheet  
    - Confirm mastery of client/server architecture  
-   - Lock in “Client/Server Awareness” under Abilities Unlocked.
+   - Lock in “Client/Server Awareness” under Abilities Unlocked

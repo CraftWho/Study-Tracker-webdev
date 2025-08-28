@@ -1,8 +1,8 @@
 {
   "default": true,
-  "MD013": false,  // Disable line length rule
-  "MD033": false,  // Allow inline HTML (for anchors or styling)
-  "MD041": false,  // Allow non-H1 first heading (for quest logs)
-  "MD004": { "style": "consistent" },  // Bullet style flexibility
-  "MD025": { "level": 2 }  // Require consistent heading levels from H2 onward
+  "MD013": false,
+  "MD033": false,
+  "MD041": false,
+  "MD004": { "style": "consistent" },
+  "MD025": { "level": 2 }
 }
