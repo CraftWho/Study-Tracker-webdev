@@ -1,4 +1,4 @@
-# 🧭 Main Questline: Introduction to the Web
+# 🧭 Main Questline: Become a Master Class developer
 
 Welcome, Traveler. This questline marks the beginning of your journey into software engineering. Through HTML, CSS, and JavaScript, you’ll build your first webpage, document your progress, and unlock foundational skills that will power future quests.
 
