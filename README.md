@@ -8,10 +8,10 @@ Whether I seek to master front-end artistry, back-end architecture, or full-stac
 
 ## 🎮 Current Status
 
-- **Class:** 🧑‍🎓 Disciple  
-- **Level:** 2  
-- **Developer Points (DP):** 400  
-- **Next Level:** Level 3 at 500 DP  
+- **Class:** 🛡️ Adept of the DOM
+- **Level:** 3
+- **Developer Points (DP):** 600
+- **Next Level:** Level 4 at 500 DP  
 - 🔗 [View DP Log](dp-log.md) | [View Skill Tree](skill-tree.md) | [View Quiz Log](quiz-log.md)
 
 ---
