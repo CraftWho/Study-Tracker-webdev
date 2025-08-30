@@ -6,9 +6,9 @@ fetch('dp-data.json')
     document.getElementById('level').textContent = data.level;
     document.getElementById('title').textContent = data.title;
     document.getElementById('dp').textContent = data.dp;
-    document.getElementById('nextlevelDP').textContent = data.nextLevelDP;
+    document.getElementById('nextlevelDP').textContent = data.nextlevelDP;
     document.getElementById('progress-text').textContent =
-      `${data.dp} / ${data.nextLevelDP} DP to Level ${data.level + 1}`;
+      `${data.dp} / ${data.nextlevelDP} DP to Level ${data.level + 1}`;
 
     const skillsList = document.getElementById('skills');
     skillsList.innerHTML = '';
@@ -18,7 +18,7 @@ fetch('dp-data.json')
       skillsList.appendChild(li);
     });
 
-    const percent = Math.min((data.dp / data.nextLevelDP) * 100, 100);
+    const percent = Math.min((data.dp / data.nextlevelDP) * 100, 100);
     document.querySelector('.fill').style.width = percent + '%';
   })
   .catch(error => {
