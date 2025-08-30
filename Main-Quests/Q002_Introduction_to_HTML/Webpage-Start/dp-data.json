@@ -1,0 +1,13 @@
+{
+   "name": "Leo",
+  "class": "Web Developer",
+  "dp": 600,
+  "level": 3,
+  "title": "🛡️ Adept of the DOM",
+  "skills": [
+    "DOM Manipulation",
+    "GUI Design Principles",
+    "Scripting Layer Awareness"
+  ],
+  "nextLevelDP": 800
+}

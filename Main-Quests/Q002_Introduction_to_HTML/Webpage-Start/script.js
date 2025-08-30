@@ -20,3 +20,42 @@ document.addEventListener("DOMContentLoaded", () => {
     fill.style.width = `${progressPercent}%`;
   }
 });
+
+fetch('dp-data.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('level').textContent = data.level;
+    document.getElementById('title').textContent = data.title;
+    document.getElementById('dp').textContent = data.dp;
+    document.getElementById('nextLevelDP').textContent = data.nextLevelDP;
+
+    const skillsList = document.getElementById('skills');
+    data.skills.forEach(skill => {
+      const li = document.createElement('li');
+      li.textContent = skill;
+      skillsList.appendChild(li);
+    });
+  })
+  .catch(error => console.error('Error loading DP data:', error));
+  fetch('dp-data.json')
+  .then(response => response.json())
+  .then(data => {
+    // Inject basic stats
+    document.getElementById('level').textContent = data.level;
+    document.getElementById('title').textContent = data.title;
+    document.getElementById('dp').textContent = data.dp;
+    document.getElementById('nextLevelDP').textContent = data.nextLevelDP;
+
+    // Inject unlocked skills
+    const skillsList = document.getElementById('skills');
+    skillsList.innerHTML = ''; // Clear existing list
+    data.skills.forEach(skill => {
+      const li = document.createElement('li');
+      li.textContent = skill;
+      skillsList.appendChild(li);
+    });
+  })
+  .catch(error => {
+    console.error('⚠️ Error loading DP data:', error);
+    document.getElementById('rpg-stats').innerHTML = '<p>Unable to load stats. Please check dp-data.json.</p>';
+  });
