@@ -60,3 +60,13 @@ fetch('dp-data.json')
     console.error('⚠️ Error loading DP data:', error);
     document.getElementById('rpg-stats').innerHTML = '<p>Unable to load stats. Please check dp-data.json.</p>';
   });
+fetch('patch-data.json')
+.then(response => response.json())
+.then(patch => {
+  const patchInfo = document.getElementById('patch-info');
+  patchInfo.textContent = `🛠️ ${patch.version} - ${patch.info}`;
+})
+.catch(error => {
+  console.error('⚠️ Error loading patch data:', error);
+  document.getElementById('patch-info').textContent = '🛠️ Patch Info Unavailable';
+});
