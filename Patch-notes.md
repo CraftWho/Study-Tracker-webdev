@@ -53,7 +53,12 @@
 
 ### 🧪 Patch v1.5.2 – DP Sync Fix
 
-- Synced JSON key `nextlevelDP` with script references
-- Progress bar now fills correctly
-- Next level DP displays as expected
-- Codex status interface fully operational
+- Synced JSON key `nextlevelDP` with script references  
+- Progress bar now fills correctly based on DP percentage  
+- Next level DP displays as expected in both stat block and progress text  
+- Progress text now dynamically shows: `600 / 800 DP to Level 4`  
+- Removed legacy reference to `nextLevelDP` from script.js  
+- Verified HTML IDs (`nextLevelDP`, `progress-text`, `fill`) are correctly wired  
+- Confirmed `dp-data.json` schema integrity and emoji-enhanced skill array  
+- Locked `nextlevelDP` as canonical key for future schema validation  
+- Codex status interface now fully reactive and visually synced
