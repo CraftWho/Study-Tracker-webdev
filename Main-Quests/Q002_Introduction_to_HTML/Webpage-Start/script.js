@@ -7,6 +7,8 @@ fetch('dp-data.json')
     document.getElementById('title').textContent = data.title;
     document.getElementById('dp').textContent = data.dp;
     document.getElementById('nextlevelDP').textContent = data.nextLevelDP;
+    document.getElementById('progress-text').textContent =
+      `${data.dp} / ${data.nextLevelDP} DP to Level ${data.level + 1}`;
 
     const skillsList = document.getElementById('skills');
     skillsList.innerHTML = '';

@@ -50,3 +50,10 @@
 - Synced with current DP and level system  
 - Styled for RPG immersion with glowing effects  
 - Future-ready for milestone animations and class unlocks
+
+### 🧪 Patch v1.5.2 – DP Sync Fix
+
+- Synced JSON key `nextlevelDP` with script references
+- Progress bar now fills correctly
+- Next level DP displays as expected
+- Codex status interface fully operational
