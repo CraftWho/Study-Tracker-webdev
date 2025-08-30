@@ -1,128 +1,116 @@
-/* === 🖤 Base Layout === */
+/* Background & Base Layout */
 body {
+  background-color: #0d0d0d;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  color: #d4d4d4;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Cinzel', serif;
-  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
-  color: #e0e0e0;
-}
-
-/* === 🏰 Header === */
-header {
-  background: linear-gradient(to right, #b8860b, #ffd700, #b8860b);
-  color: #000;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 4px solid #8b0000;
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
-}
-
-/* === 🧭 Navigation === */
-nav {
-  margin-top: 10px;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none; /* Removes default list dots */
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(13, 13, 13, 0.95);
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #b22222;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ffd700;
+}
+
+header h1 {
+  color: #ffd700;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
   padding-left: 0;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 nav a {
-  color: #ffd700;
+  color: #d4d4d4;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; /* Black outline */
 }
 
 nav a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #ffd700;
-}
-
-/* === 📦 Container === */
-.container {
-  background-color: #111;
-  border: 2px solid #ffd700;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-  border-radius: 10px;
-  padding: 30px;
-  max-width: 800px;
-  margin: 40px auto;
-  text-align: center;
-  background-image: url('your-parchment-texture.png');
-  background-size: cover;
-}
-
-/* === 🧾 Typography === */
-h1, h2 {
   color: #ffd700;
-  text-shadow: 1px 1px 3px #000;
 }
 
-p {
-  color: #d4d4d4;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-shadow: 1px 1px 3px #000;
+/* Section Titles */
+h3 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
 }
 
-/* === 🕹️ Button === */
-button {
-  background-color: #8b0000;
-  color: #fff;
-  border: 2px solid #ffd700;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 6px;
-  margin: 20px auto;
-  display: block;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #a52a2a;
-  box-shadow: 0 0 10px #ffd700;
-}
-
-/* === 🧙 Footer === */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #999;
-  margin-top: 40px;
-}
-/* === 🧮 DP Progress Bar === */
-.progress-bar {
-  width: 100%;
-  height: 24px;
-  background-color: #222;
-  border: 2px solid #ffd700;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-  margin: 10px 0;
-}
-
-.progress-bar .fill {
-  height: 100%;
-  background: linear-gradient(to right, #ffd700, #b8860b);
-  width: 0%;
-  transition: width 0.5s ease-in-out;
-}
-ul {
-  list-style-type: none;
+/* RPG Stats & Skills */
+#rpg-stats ul,
+#skills-unlocked ul {
+  list-style: none;
   padding-left: 0;
 }
 
-#skills li {
+#rpg-stats li,
+#skills-unlocked li {
   margin-bottom: 0.5rem;
 }
-/* === 🖤 End of Style === */
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 5px #ffd700;
+}
+
+.fill {
+  height: 100%;
+  background-color: #ffd700;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Button */
+button {
+  background-color: #b22222;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 0 5px #b22222;
+}
+
+button:hover {
+  background-color: #8b0000;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #ffd700;
+  margin-top: auto;
+}

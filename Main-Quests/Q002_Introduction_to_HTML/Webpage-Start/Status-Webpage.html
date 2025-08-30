@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leo's RPG Webpage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>📊 Study Tracker – Status Webpage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🧭 Leo's Study Tracker</h1>
+    <h1>📊 Study Tracker</h1>
     <nav>
       <ul>
-        <li><a href="../quiz-log.md">📜 Quest Log</a></li>
-        <li><a href="../skill-tree.md">🌿 Skill Tree</a></li>
-        <li><a href="../codex.md">📖 Codex</a></li>
+        <li><a href="../Quest-Log/index.html">Quest Log</a></li>
+        <li><a href="../Skill-Tree/index.html">Skill Tree</a></li>
+        <li><a href="../Codex/index.html">Codex</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <h2>Welcome, Traveler</h2>
-    <p>This is a modular webpage built in VS Code. It serves as the visual gateway to my developer questline.</p>
+    <!-- 🧙🏾 RPG Stats -->
+    <section id="rpg-stats">
+      <h3>🧙🏾 Current Status</h3>
+      <ul>
+        <li><strong>Name:</strong> <span id="name"></span></li>
+        <li><strong>Level:</strong> <span id="level"></span></li>
+        <li><strong>Title:</strong> <span id="title"></span></li>
+        <li><strong>DP:</strong> <span id="dp"></span></li>
+        <li><strong>Next Level:</strong> <span id="nextLevelDP"></span> DP</li>
+      </ul>
+    </section>
 
-  <section id="rpg-stats">
-  <h3>🧙🏾 Current Status</h3>
-  <ul>
-    <li><strong>Name:</strong> <span id="name"></span></li>
-    <li><strong>Level:</strong> <span id="level"></span></li>
-    <li><strong>Title:</strong> <span id="title"></span></li>
-    <li><strong>DP:</strong> <span id="dp"></span></li>
-    <li><strong>Next Level:</strong> <span id="nextLevelDP"></span> DP</li>
-  </ul>
-  </section>
-
-      
-      <section id="skills-unlocked">
-  <h3>🧠 Skills Unlocked</h3>
-  <ul id="skills"></ul>
-</section>
-
-
+    <!-- 🎯 DP Progress -->
     <section class="progress">
-  <h3>🧮 DP Progress</h3>
-  <div class="progress-bar">
-    <div class="fill" style="width: 80%;"></div>
-  </div>
-  <p>400 / 500 DP to Level 3</p>
-</section>
+      <h3>🎯 DP Progress</h3>
+      <div class="progress-bar">
+        <div class="fill"></div>
+      </div>
+      <p id="progress-text"></p>
+    </section>
 
-    
-</section>
+    <!-- 🧠 Skills Unlocked -->
+    <section id="skills-unlocked">
+      <h3>🧠 Skills Unlocked</h3>
+      <ul id="skills"></ul>
+    </section>
 
-  <button onclick="window.location.href='../Achievements/index.html'">Trophies</button>
-</main>
+    <!-- 🏅 Trophies Button -->
+    <button onclick="window.location.href='../Achievements/index.html'">Trophies</button>
+  </main>
 
-<footer>
-  <p id="patch-info">🛠 Patch loading...</p>
-</footer>
+  <!-- 🛠 Patch Info -->
+  <footer>
+    <p id="patch-info">🛠 Patch loading...</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
