@@ -1,72 +1,34 @@
-function showMessage() {
-  alert("🧭 Quest Started! Let's go Traveler.");
-}
-const devStatus = {
-  class: "Disciple",
-  level: 2,
-  dp: 400
-};
-
-function showStatus() {
-  alert(`🧑‍🎓 Class: ${devStatus.class}\n🎮 Level: ${devStatus.level}\n🧮 Developer Points: ${devStatus.dp} DP`);
-}
-const currentDP = 400;
-const nextLevelDP = 500;
-const progressPercent = (currentDP / nextLevelDP) * 100;
-
-document.addEventListener("DOMContentLoaded", () => {
-  const fill = document.querySelector(".progress-bar .fill");
-  if (fill) {
-    fill.style.width = `${progressPercent}%`;
-  }
-});
-
+// Inject RPG Stats from dp-data.json
 fetch('dp-data.json')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('level').textContent = data.level;
-    document.getElementById('title').textContent = data.title;
-    document.getElementById('dp').textContent = data.dp;
-    document.getElementById('nextLevelDP').textContent = data.nextLevelDP;
-
-    const skillsList = document.getElementById('skills');
-    data.skills.forEach(skill => {
-      const li = document.createElement('li');
-      li.textContent = skill;
-      skillsList.appendChild(li);
-    });
-  })
-  .catch(error => console.error('Error loading DP data:', error));
-  fetch('dp-data.json')
-  .then(response => response.json())
-  .then(data => {
-    // Inject basic stats
     document.getElementById('name').textContent = data.name;
     document.getElementById('level').textContent = data.level;
     document.getElementById('title').textContent = data.title;
     document.getElementById('dp').textContent = data.dp;
-    document.getElementById('nextLevelDP').textContent = data.nextLevelDP;
+    document.getElementById('nextLevelDP').textContent = data.nextLevelXP;
 
-    // Inject unlocked skills
     const skillsList = document.getElementById('skills');
-    skillsList.innerHTML = ''; // Clear existing list
-    data.skills.forEach(skill => {
+    skillsList.innerHTML = '';
+    Object.values(data.skills).forEach(skill => {
       const li = document.createElement('li');
       li.textContent = skill;
       skillsList.appendChild(li);
     });
+
+    const percent = Math.min((data.dp / data.nextLevelXP) * 100, 100);
+    document.querySelector('.fill').style.width = percent + '%';
   })
   .catch(error => {
-    console.error('⚠️ Error loading DP data:', error);
-    document.getElementById('rpg-stats').innerHTML = '<p>Unable to load stats. Please check dp-data.json.</p>';
+    console.error('⚠️ Error loading RPG stats:', error);
   });
+
+// Inject Patch Info from patch-data.json
 fetch('patch-data.json')
-.then(response => response.json())
-.then(patch => {
-  const patchInfo = document.getElementById('patch-info');
-  patchInfo.textContent = `🛠️ ${patch.version} - ${patch.info}`;
-})
-.catch(error => {
-  console.error('⚠️ Error loading patch data:', error);
-  document.getElementById('patch-info').textContent = '🛠️ Patch Info Unavailable';
-});
+  .then(response => response.json())
+  .then(patch => {
+    document.getElementById('patch-info').textContent = `🛠 ${patch.version} – ${patch.notes}`;
+  })
+  .catch(error => {
+    console.error('⚠️ Error loading patch info:', error);
+  });
