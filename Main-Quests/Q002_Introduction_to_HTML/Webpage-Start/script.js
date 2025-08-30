@@ -41,6 +41,7 @@ fetch('dp-data.json')
   .then(response => response.json())
   .then(data => {
     // Inject basic stats
+    document.getElementById('name').textContent = data.name;
     document.getElementById('level').textContent = data.level;
     document.getElementById('title').textContent = data.title;
     document.getElementById('dp').textContent = data.dp;
